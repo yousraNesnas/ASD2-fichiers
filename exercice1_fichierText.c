@@ -189,18 +189,19 @@ void supprimer_etudiants()
     fclose(fichier);
 }
 
+
 int main()
 {
     int n;
     printf("Donnez le nombre d'etudiants que vous voullez enregistrer :");
     scanf("%d", &n);
-    creer_fichier_etudiants(n); // Appelle la fonction pour créer le fichier et enregistrer les étudiants
-    printf("\n****************************************************\n");
-    afficher_etudiants(); // Appelle la fonction pour afficher les étudiants du fichier
-    printf("\n****************************************************\n");
+    // creer_fichier_etudiants(n); // Appelle la fonction pour créer le fichier et enregistrer les étudiants
+    // printf("\n****************************************************\n");
+    // afficher_etudiants(); // Appelle la fonction pour afficher les étudiants du fichier
+    // printf("\n****************************************************\n");
     ajouter_etudiant(); // Appelle la fonction pour ajouter un nouvel étudiant au fichier
-    printf("\n****************************************************\n");
-    insererEtudiant(); // Appelle la fonction pour insérer un nouvel étudiant dans le fichier trié par ordre alphabétique
-    printf("\n****************************************************\n");
-    supprimer_etudiants(); // Appelle la fonction pour supprimer des étudiants du fichier
+    // printf("\n****************************************************\n");
+    // insererEtudiant(); // Appelle la fonction pour insérer un nouvel étudiant dans le fichier trié par ordre alphabétique
+    // printf("\n****************************************************\n");
+    // supprimer_etudiants(); // Appelle la fonction pour supprimer des étudiants du fichier
 }

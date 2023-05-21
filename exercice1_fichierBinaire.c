@@ -56,7 +56,7 @@ void afficher_etudiants()
 
     printf("Liste des etudiants :\n");
 
-    while (fread(&etu, sizeof(Etudiant), 1, f) == 1) // Lit les enregistrements étudiants à partir du fichier
+    while (fread(&etu, sizeof(etu), 1, f) == 1) // Lit les enregistrements étudiants à partir du fichier
     {
         printf("%d - %s %s - %.2f\n", etu.matricule, etu.nom, etu.prenom, etu.moyenne);
         moyenne_totale += etu.moyenne;
@@ -183,5 +183,5 @@ int main()
     inserer_etudiant_tri();
     afficher_etudiants();
     printf("\n****************************************************\n");
-    supprimer_etudiants(); // Appelle la fonction pour supprimer des étudiants du fichier
+    // supprimer_etudiants(); // Appelle la fonction pour supprimer des étudiants du fichier
 }
